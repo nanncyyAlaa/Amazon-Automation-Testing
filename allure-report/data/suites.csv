@@ -1,4 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","49324","AccountAccess","Default Suite","2026-02-24","passed","2026-02-24","Test.TC03_Access","Amazon-Testing","Test.TC03_Access","AccountAccess"
-"","1349","failedTestExample","Default Suite","2026-02-24","failed","2026-02-24","Test.TC03_Access","Amazon-Testing","Test.TC03_Access","failedTestExample"
-"","0","recordFailure","Default Suite","2026-02-24","broken","2026-02-24","Test.TC03_Access","Amazon-Testing","Test.TC03_Access","recordFailure"
