@@ -49,10 +49,6 @@ public class HomePage {
         elementUtils.hover(loginNav); // Hover over login for dropdown menu
     }
 
-    public String getProblemHeading(){
-        return elementUtils.getText(noAccHeading); // Return text of "There was a problem" heading
-    }
-
     public void clickOrdersNav() {
         elementUtils.click(ordersNav);
     }
