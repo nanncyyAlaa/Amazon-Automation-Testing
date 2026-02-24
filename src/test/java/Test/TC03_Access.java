@@ -47,6 +47,7 @@ public class TC03_Access {
         // Login process
         loginPage.loginAccess("nanncyyalaa@gmail.com");
         loginPage.clickContinueBtn();
+        assertTrue(homePage.getProblemHeading().contains("a problem"),"unexpected action");
         loginPage.clickAmazonIcon();
 
         // Navigate to Account -> Addresses (requires login)
