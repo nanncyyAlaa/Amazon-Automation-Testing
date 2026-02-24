@@ -22,6 +22,7 @@ public class LoginPage {
     private final By continueBtn = By.className("a-button-input"); // Continue button after email
     private final By notRegisteredEmail = By.xpath("//h1[contains(text(),'Looks')]"); // "Looks like you're new" message
     private final By homeNav = By.cssSelector("a.a-link-nav-icon"); // Amazon home icon link
+    private final By noAccHeading = By.xpath("//h4[contains(text(),\"There was a problem\")]"); // Problem message for no account
 
     /*
      * Methods to interact with Login Page
@@ -51,6 +52,11 @@ public class LoginPage {
     // Enter email in access page (alternate login flow)
     public void loginAccess(String email){
         elementUtils.sendKeys(emailAccess,email);
+    }
+    
+     // Return text of "There was a problem" heading
+     public String getProblemHeading(){
+        return elementUtils.getText(noAccHeading); 
     }
 
     // Get the "not registered" message text
