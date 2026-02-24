@@ -23,7 +23,6 @@ public class HomePage {
     private final By ordersNav = By.id("nav_prefetch_yourorders"); // Orders navigation link
     private final By addressesNav= By.xpath(" //div[@data-card-identifier='AddressesAnd1Click']"); // Addresses section
     private final By listsNav= By.xpath(" //div[@data-card-identifier='YourLists_C']"); // Lists section
-    private final By noAccHeading = By.xpath("//h4[contains(text(),\"There was a problem\")]"); // Problem message for no account
     private final By listsHeader = By.cssSelector("div.intro-page-banner-header"); // Lists page heading
 
     /*
@@ -48,6 +47,10 @@ public class HomePage {
 
     public void hoverOverAccAndLists(){
         elementUtils.hover(loginNav); // Hover over login for dropdown menu
+    }
+
+    public String getProblemHeading(){
+        return elementUtils.getText(noAccHeading); // Return text of "There was a problem" heading
     }
 
     public void clickOrdersNav() {
